@@ -1,11 +1,12 @@
-$primary-blue: blue;
+$primary-blue: #43536b;
 $secondary-blue: rgba(97, 129, 165, 0.5);
 $light-gray: #e5e5e5;
+$mid-gray: #8a8a8a;
 $blue-gradient: linear-gradient(
-  270deg,
-  #141e30 3.94%,
-  #1f3249 40.97%,
-  #243b55 98.48%
+    270deg,
+    #141e30 3.94%,
+    #1f3249 40.97%,
+    #243b55 98.48%
 );
 
 //Utilities
