@@ -19,16 +19,18 @@
         <div id="sideNav">
             <ul>
                 <li>
-                    <a><i class="far fa-home-lg-alt"></i></a>
+                    <a href="#"><i class="far fa-home-lg-alt"></i></a>
                 </li>
                 <li>
-                    <a><i class="far fa-user-astronaut"></i></a>
+                    <a href="#about-me"
+                        ><i class="far fa-user-astronaut"></i
+                    ></a>
                 </li>
                 <li>
-                    <a><i class="fab fa-github-square"></i></a>
+                    <a href="#projects"><i class="fab fa-github-square"></i></a>
                 </li>
                 <li>
-                    <a><i class="fas fa-book"></i></a>
+                    <a href="#skills"><i class="fas fa-book"></i></a>
                 </li>
             </ul>
         </div>
@@ -49,7 +51,7 @@
                 </div>
             </div>
             <div id="scroll-arrow">
-                <i class="far fa-angle-double-down"></i>
+                <a href="#about-me"><i class="far fa-angle-double-down"></i></a>
             </div>
         </div>
         <div id="main-content">
@@ -75,7 +77,9 @@
                     <a href="https://www.linkedin.com"
                         ><i class="fab fa-linkedin"></i
                     ></a>
-                    <a href="https://www.github.com"
+                    <a
+                        href="https://github.com/martinkt14?tab=repositories"
+                        target="_blank"
                         ><i class="fab fa-github-square"></i
                     ></a>
                 </div>
@@ -117,20 +121,49 @@
                     <p>What I Know</p>
                     <h5>My Skills</h5>
                     <ul>
-                        <li class="active-skillset">Front End</li>
-                        <li>Back End</li>
-                        <li>Tools</li>
+                        <li
+                            id="skill-frontend"
+                            class="active-skillset skill-btn"
+                        >
+                            Front End
+                        </li>
+                        <li id="skill-backend" class="skill-btn">Back End</li>
+                        <li id="skill-tools" class="skill-btn">Tools</li>
                     </ul>
                 </div>
+                <div id="skill-list">
+                    <div id="frontend-skills" class="skillset active">
+                        <div class="skill"><i class="fab fa-html5"></i></div>
+                        <div class="skill"><i class="fab fa-js"></i></div>
+                        <div class="skill"><i class="fab fa-sass"></i></div>
+                        <div class="skill">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <div class="skill"><i class="fab fa-css3"></i></div>
+                    </div>
+                    <div id="backend-skills" class="skillset inactive">
+                        <div class="skill"><i class="fab fa-node-js"></i></div>
+                        <div class="skill"><i class="fab fa-php"></i></div>
+                    </div>
+                    <div id="tool-skills" class="skillset inactive">
+                        <div class="skill">
+                            <i class="fab fa-git-square"></i>
+                        </div>
+                        <div class="skill"><i class="fab fa-npm"></i></div>
+                    </div>
+                </div>
             </div>
-            <div id="skill-list"></div>
         </div>
         <footer>
             <img src="./img/Signature - White.png" />
             <p>&copy; 2019 - Martin K. Teufel</p>
             <div id="social-icons">
                 <a><i class="fab fa-linkedin"></i></a>
-                <a><i class="fab fa-github-square"></i></a>
+                <a
+                    href="https://github.com/martinkt14?tab=repositories"
+                    target="_blank"
+                    ><i class="fab fa-github-square"></i
+                ></a>
             </div>
         </footer>
         <!--Scripts-->
@@ -141,5 +174,18 @@
                 "/particlesjs/particlesjs-config.json"
             );
         </script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+            integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+            integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/animations.js"></script>
+        <script src="./js/skills.js"></script>
     </body>
 </html>

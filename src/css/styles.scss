@@ -8,6 +8,10 @@
     // box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
 }
@@ -64,10 +68,15 @@ body {
     }
     #scroll-arrow {
         margin: 0 auto;
-        z-index: 1;
-        color: $secondary-blue;
         text-align: center;
         animation: pulse 3s ease-in-out infinite;
+        a {
+            color: $secondary-blue;
+            text-decoration: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 }
 
@@ -85,17 +94,18 @@ body {
         align-items: center;
         li {
             font-size: 1.5rem;
-            color: $secondary-blue;
             margin-bottom: 1.5rem;
+            transition: all 0.3s ease-out;
             &:last-of-type {
                 margin-bottom: 0;
             }
-            &:hover {
-                color: white;
-                transition: all 0.3s ease-in-out;
-            }
             a {
                 cursor: pointer;
+                color: $secondary-blue;
+                &:hover {
+                    color: white;
+                    transition: all 0.3s ease-in;
+                }
             }
         }
     }
@@ -134,10 +144,15 @@ body {
                 }
             }
             a {
-                color: $mid-gray;
+                color: lighten($mid-gray, 30%);
                 margin-right: 0.5rem;
+                transition: all 0.3s ease-out;
                 i {
                     font-size: 2rem;
+                }
+                &:hover {
+                    color: $mid-gray;
+                    transition: all 0.3s ease-in;
                 }
             }
         }
@@ -175,11 +190,13 @@ body {
 
 #skills {
     background: $blue-gradient;
-    padding: 4rem 4rem 10rem 4rem;
+    padding: 8rem 4rem 10rem 4rem;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
     #skill-flex-container {
         width: 60%;
         margin: 0 auto;
-        display: flex;
+        display: grid;
+        grid-template-columns: 40% 60%;
         #skill-menu {
             ul {
                 list-style: none;
@@ -188,12 +205,13 @@ body {
                     color: $secondary-blue;
                     margin-bottom: 2rem;
                     cursor: pointer;
+                    transition: all 0.3s ease-out;
                     &:last-of-type {
                         margin-bottom: 0;
                     }
                     &:hover {
                         color: white;
-                        transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in;
                     }
                     &.active-skillset {
                         color: white;
@@ -213,6 +231,26 @@ body {
             }
         }
         #skill-list {
+            .skillset {
+                &.active {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-grow: 0;
+                }
+                &.inactive {
+                    display: none;
+                }
+                .skill {
+                    background: $secondary-blue;
+                    padding: 1rem 1.5rem;
+                    margin-right: 1.5rem;
+                    border-radius: 4px;
+                    i {
+                        font-size: 2rem;
+                        color: $light-gray;
+                    }
+                }
+            }
         }
     }
 }
@@ -237,9 +275,16 @@ footer {
         align-self: center;
         font-size: 1.5rem;
         a {
+            color: $secondary-blue;
             margin-right: 0.5rem;
+            transition: all 0.3s ease-out;
             &:last-of-type {
                 margin-right: 0;
+            }
+            &:hover {
+                cursor: pointer;
+                color: white;
+                transition: all 0.3s ease-in;
             }
         }
     }
