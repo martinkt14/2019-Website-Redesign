@@ -49,6 +49,7 @@ body {
                 font-size: 1rem;
                 color: $light-gray;
                 margin-top: 2rem;
+                margin-bottom: 2rem;
             }
             img {
                 width: 30%;
@@ -91,7 +92,6 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
         li {
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
@@ -102,9 +102,19 @@ body {
             a {
                 cursor: pointer;
                 color: $secondary-blue;
-                &:hover {
-                    color: white;
-                    transition: all 0.3s ease-in;
+                i {
+                    &:hover {
+                        // color: white;
+                        transition: color 0.2s ease-in;
+                        &:after {
+                            font-size: 0.9rem;
+                            font-family: "Montserrat", sans-serif;
+                            font-weight: 400;
+                            padding-left: 8px;
+                            vertical-align: middle;
+                            content: attr(data-nav-tooltip);
+                        }
+                    }
                 }
             }
         }
@@ -116,8 +126,15 @@ body {
     margin: 4rem auto 0;
     #about-me {
         display: flex;
+        align-items: center;
         #avatar {
             flex-grow: 1;
+            img {
+                width: 60%;
+                max-width: 340px;
+                display: inline-block;
+                margin: 0 auto;
+            }
         }
         #about-me-text {
             flex-grow: 1;
@@ -177,11 +194,25 @@ body {
             width: 80%;
             margin: 0 auto;
             .project {
+                // padding: 40px 30px;
+                // border: 1px solid hsl(210, 10%, 85%);
                 .img-wireframe {
                     width: 200px;
                     height: 200px;
                     background: $primary-blue;
                     margin: 0 auto 2rem;
+                }
+                .img-container {
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        box-shadow: 0 3px 6px hsla(0, 0, 0%, 0.15),
+                            0 2px 4px hsla(0, 0, 0%, 0.12);
+                    }
+                }
+                .project-label {
+                    // text-align: left;
+                    margin-bottom: 2rem;
                 }
             }
         }
@@ -190,8 +221,8 @@ body {
 
 #skills {
     background: $blue-gradient;
-    padding: 8rem 4rem 10rem 4rem;
-    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+    padding: 10rem 4rem 10rem 4rem;
+    // clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
     #skill-flex-container {
         width: 60%;
         margin: 0 auto;
@@ -260,7 +291,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: $light-gray;
+    color: $secondary-blue;
     img {
         align-self: center;
         max-height: 4rem;

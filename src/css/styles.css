@@ -110,6 +110,7 @@ body {
   font-size: 1rem;
   color: #e5e5e5;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #hero #hero-flex-container #hero-text img {
@@ -169,9 +170,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #sideNav ul li {
@@ -190,10 +188,18 @@ body {
   color: rgba(97, 129, 165, 0.5);
 }
 
-#sideNav ul li a:hover {
-  color: white;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+#sideNav ul li a i:hover {
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+#sideNav ul li a i:hover:after {
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding-left: 8px;
+  vertical-align: middle;
+  content: attr(data-nav-tooltip);
 }
 
 #main-content {
@@ -205,12 +211,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #main-content #about-me #avatar {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+#main-content #about-me #avatar img {
+  width: 60%;
+  max-width: 340px;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 #main-content #about-me #about-me-text {
@@ -303,12 +319,21 @@ body {
   margin: 0 auto 2rem;
 }
 
+#main-content #projects #project-container .project .img-container img {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+#main-content #projects #project-container .project .project-label {
+  margin-bottom: 2rem;
+}
+
 #skills {
   background: -webkit-gradient(linear, right top, left top, color-stop(3.94%, #141e30), color-stop(40.97%, #1f3249), color-stop(98.48%, #243b55));
   background: linear-gradient(270deg, #141e30 3.94%, #1f3249 40.97%, #243b55 98.48%);
-  padding: 8rem 4rem 10rem 4rem;
-  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+  padding: 10rem 4rem 10rem 4rem;
 }
 
 #skills #skill-flex-container {
@@ -404,7 +429,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #e5e5e5;
+  color: rgba(97, 129, 165, 0.5);
 }
 
 footer img {
