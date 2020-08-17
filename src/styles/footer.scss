@@ -1,0 +1,41 @@
+@import "./config";
+@import "./text-styles";
+@import "./components";
+
+footer {
+  background: $blue-gradient;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $secondary-blue;
+  img {
+    align-self: center;
+    max-height: 4rem;
+    @media (max-width: $phone-breakpoint) {
+      width: 40%;
+    }
+  }
+  p {
+    @include mont-regular;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  #social-icons {
+    padding: 1rem 0;
+    align-self: center;
+    font-size: 1.5rem;
+    a {
+      color: $secondary-blue;
+      margin-right: 0.5rem;
+      transition: all 0.3s ease-out;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      &:hover {
+        cursor: pointer;
+        color: white;
+        transition: all 0.3s ease-in;
+      }
+    }
+  }
+}

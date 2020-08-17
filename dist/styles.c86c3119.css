@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
 .btn {
   text-decoration: none;
   background: transparent;
@@ -40,6 +42,230 @@
   margin-right: 0.5rem;
 }
 
+.btn {
+  text-decoration: none;
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid #43536b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #43536b;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-inverse {
+  text-decoration: none;
+  background: #43536b;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid #43536b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.btn-inverse:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #43536b;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-btn i {
+  margin-right: 0.5rem;
+}
+
+#skills {
+  background: linear-gradient(270deg, #141e30 3.94%, #1f3249 40.97%, #243b55 98.48%);
+  padding: 10rem 4rem 10rem 4rem;
+}
+@media (max-width: 480px) {
+  #skills {
+    padding: 1rem 0;
+  }
+}
+#skills #skill-flex-container {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+@media (max-width: 480px) {
+  #skills #skill-flex-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+#skills #skill-flex-container #skill-menu ul {
+  list-style: none;
+}
+@media (max-width: 480px) {
+  #skills #skill-flex-container #skill-menu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#skills #skill-flex-container #skill-menu ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: rgba(97, 129, 165, 0.5);
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+#skills #skill-flex-container #skill-menu ul li:last-of-type {
+  margin-bottom: 0;
+}
+#skills #skill-flex-container #skill-menu ul li:hover {
+  color: #e5e5e5;
+  transition: all 0.3s ease-in;
+}
+#skills #skill-flex-container #skill-menu ul li.active-skillset {
+  color: white;
+}
+#skills #skill-flex-container #skill-menu p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #8a8a8a;
+}
+#skills #skill-flex-container #skill-menu h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  color: white;
+}
+@media (max-width: 480px) {
+  #skills #skill-flex-container #skill-menu h5 {
+    margin-bottom: 2rem;
+  }
+}
+#skills #skill-flex-container #skill-list .skillset.active {
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 0;
+}
+@media (max-width: 480px) {
+  #skills #skill-flex-container #skill-list .skillset.active {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+#skills #skill-flex-container #skill-list .skillset.inactive {
+  display: none;
+}
+#skills #skill-flex-container #skill-list .skillset .skill {
+  background: rgba(97, 129, 165, 0.5);
+  padding: 1rem 1.5rem;
+  margin-right: 1.5rem;
+  border-radius: 4px;
+}
+@media (max-width: 480px) {
+  #skills #skill-flex-container #skill-list .skillset .skill {
+    width: 40%;
+    margin-right: 0;
+  }
+}
+#skills #skill-flex-container #skill-list .skillset .skill i {
+  font-size: 2rem;
+  color: #e5e5e5;
+}
+
+.btn {
+  text-decoration: none;
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid #43536b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #43536b;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-inverse {
+  text-decoration: none;
+  background: #43536b;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid #43536b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.btn-inverse:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #43536b;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-btn i {
+  margin-right: 0.5rem;
+}
+
+footer {
+  background: linear-gradient(270deg, #141e30 3.94%, #1f3249 40.97%, #243b55 98.48%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgba(97, 129, 165, 0.5);
+}
+footer img {
+  align-self: center;
+  max-height: 4rem;
+}
+@media (max-width: 480px) {
+  footer img {
+    width: 40%;
+  }
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: center;
+}
+footer #social-icons {
+  padding: 1rem 0;
+  align-self: center;
+  font-size: 1.5rem;
+}
+footer #social-icons a {
+  color: rgba(97, 129, 165, 0.5);
+  margin-right: 0.5rem;
+  transition: all 0.3s ease-out;
+}
+footer #social-icons a:last-of-type {
+  margin-right: 0;
+}
+footer #social-icons a:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -59,11 +285,6 @@ body {
   width: 100%;
   min-height: 100vh;
 }
-#hero #particlesjs {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-}
 #hero #video-container {
   position: absolute;
   top: 0;
@@ -71,6 +292,11 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  #hero #video-container {
+    display: none;
+  }
 }
 #hero #video-container video {
   min-width: 100%;
@@ -86,12 +312,22 @@ body {
   z-index: 1;
   opacity: 0.6;
 }
+@media (max-width: 480px) {
+  #hero #header-overlay {
+    opacity: 1;
+  }
+}
 #hero #text-overlay {
   position: absolute;
   top: 40%;
   left: 10%;
   transform: translateY(-50%);
   z-index: 2;
+}
+@media (max-width: 480px) {
+  #hero #text-overlay {
+    display: none;
+  }
 }
 #hero #text-overlay h1 {
   font-family: "Montserrat", sans-serif;
@@ -110,11 +346,22 @@ body {
   align-items: center;
   z-index: 2;
 }
+@media (max-width: 768px) {
+  #hero #header-content {
+    width: 90%;
+    text-align: center;
+  }
+}
 #hero #header-content #hero-text {
   flex-grow: 1;
   z-index: 2;
   position: absolute;
   top: 65%;
+}
+@media (max-width: 768px) {
+  #hero #header-content #hero-text {
+    top: 40%;
+  }
 }
 #hero #header-content #hero-text h1 {
   font-family: "Montserrat", sans-serif;
@@ -122,11 +369,10 @@ body {
   font-size: 3rem;
   color: #e5e5e5;
 }
-#hero #header-content #hero-text h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: rgba(97, 129, 165, 0.5);
+@media (max-width: 480px) {
+  #hero #header-content #hero-text h1 {
+    font-size: 2rem;
+  }
 }
 #hero #header-content #hero-text p {
   width: 500px;
@@ -136,6 +382,11 @@ body {
   color: #e5e5e5;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  #hero #header-content #hero-text p {
+    width: 90%;
+  }
 }
 #hero #header-content .btn {
   background: #f04a00;
@@ -159,6 +410,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 480px) {
+  #hero #scroll-arrow {
+    display: none;
+  }
+}
 
 #sideNav {
   position: fixed;
@@ -170,6 +426,11 @@ body {
   justify-content: center;
   padding: 0 1rem;
   z-index: 5;
+}
+@media (max-width: 768px) {
+  #sideNav {
+    display: none;
+  }
 }
 #sideNav ul {
   list-style: none;
@@ -233,13 +494,104 @@ body {
   transition: 0.2s;
 }
 
+#mobile-nav-container {
+  position: fixed;
+  width: 100vw;
+  z-index: 50;
+  display: none;
+}
+@media (max-width: 768px) {
+  #mobile-nav-container {
+    display: block;
+    background: #e5e5e5;
+  }
+}
+#mobile-nav-container #menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #43536b;
+  font-size: 3rem;
+}
+#mobile-nav-container #mobile-menu {
+  background: #e5e5e5;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: 0.4s ease;
+}
+#mobile-nav-container #mobile-menu.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  transition: 0.4s ease;
+}
+#mobile-nav-container #mobile-menu .fa-times {
+  font-size: 3rem;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #43536b;
+}
+#mobile-nav-container #mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#mobile-nav-container #mobile-menu ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #43536b;
+  margin-bottom: 2rem;
+}
+#mobile-nav-container #mobile-menu ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+#mobile-nav-container #mobile-menu #menu-social-icons {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#mobile-nav-container #mobile-menu #menu-social-icons a {
+  color: rgba(97, 129, 165, 0.5);
+}
+#mobile-nav-container #mobile-menu #menu-social-icons a i {
+  font-size: 3rem;
+}
+
 #main-content {
   width: 70%;
   margin: 4rem auto 0;
 }
+@media (max-width: 480px) {
+  #main-content {
+    width: 90%;
+  }
+}
 #main-content #about-me {
   display: flex;
   align-items: center;
+}
+@media (max-width: 480px) {
+  #main-content #about-me {
+    flex-direction: column;
+  }
 }
 #main-content #about-me #avatar {
   flex-grow: 1;
@@ -250,21 +602,28 @@ body {
   display: inline-block;
   margin: 0 auto;
 }
+@media (max-width: 480px) {
+  #main-content #about-me #avatar {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 #main-content #about-me #about-me-text {
   flex-grow: 1;
-  max-width: 50%;
+  width: 50%;
+}
+@media (max-width: 480px) {
+  #main-content #about-me #about-me-text {
+    width: 80%;
+    text-align: center;
+  }
 }
 #main-content #about-me #about-me-text p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #8a8a8a;
-}
-#main-content #about-me #about-me-text p:first-of-type {
   font-size: 1rem;
-}
-#main-content #about-me #about-me-text p:last-of-type {
-  text-align: justify;
-  font-size: 0.9rem;
 }
 #main-content #about-me #about-me-text h5 {
   font-family: "Montserrat", sans-serif;
@@ -272,10 +631,13 @@ body {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: #43536b;
-}
-#main-content #about-me #about-me-text h5:last-of-type {
   margin-top: 2rem;
-  margin-bottom: 0.75rem;
+}
+#main-content #about-me #about-me-text #cert-badges {
+  margin-top: 2rem;
+}
+#main-content #about-me #about-me-text #cert-badges img {
+  max-width: 120px;
 }
 #main-content #about-me #about-me-text a {
   color: #d7d7d7;
@@ -312,6 +674,11 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+@media (max-width: 480px) {
+  #main-content #projects #project-container {
+    flex-direction: column;
+  }
+}
 #main-content #projects #project-container .project .img-wireframe {
   width: 200px;
   height: 200px;
@@ -325,105 +692,6 @@ body {
 }
 #main-content #projects #project-container .project .project-label {
   margin-bottom: 2rem;
-}
-
-#skills {
-  background: linear-gradient(270deg, #141e30 3.94%, #1f3249 40.97%, #243b55 98.48%);
-  padding: 10rem 4rem 10rem 4rem;
-}
-#skills #skill-flex-container {
-  width: 60%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 40% 60%;
-}
-#skills #skill-flex-container #skill-menu ul {
-  list-style: none;
-}
-#skills #skill-flex-container #skill-menu ul li {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: rgba(97, 129, 165, 0.5);
-  margin-bottom: 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-#skills #skill-flex-container #skill-menu ul li:last-of-type {
-  margin-bottom: 0;
-}
-#skills #skill-flex-container #skill-menu ul li:hover {
-  color: white;
-  transition: all 0.3s ease-in;
-}
-#skills #skill-flex-container #skill-menu ul li.active-skillset {
-  color: white;
-}
-#skills #skill-flex-container #skill-menu p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #8a8a8a;
-}
-#skills #skill-flex-container #skill-menu h5 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 4rem;
-  color: white;
-}
-#skills #skill-flex-container #skill-list .skillset.active {
-  display: flex;
-  align-items: flex-start;
-  flex-grow: 0;
-}
-#skills #skill-flex-container #skill-list .skillset.inactive {
-  display: none;
-}
-#skills #skill-flex-container #skill-list .skillset .skill {
-  background: rgba(97, 129, 165, 0.5);
-  padding: 1rem 1.5rem;
-  margin-right: 1.5rem;
-  border-radius: 4px;
-}
-#skills #skill-flex-container #skill-list .skillset .skill i {
-  font-size: 2rem;
-  color: #e5e5e5;
-}
-
-footer {
-  background: linear-gradient(270deg, #141e30 3.94%, #1f3249 40.97%, #243b55 98.48%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: rgba(97, 129, 165, 0.5);
-}
-footer img {
-  align-self: center;
-  max-height: 4rem;
-}
-footer p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 0.8rem;
-  text-align: center;
-}
-footer #social-icons {
-  padding: 1rem 0;
-  align-self: center;
-  font-size: 1.5rem;
-}
-footer #social-icons a {
-  color: rgba(97, 129, 165, 0.5);
-  margin-right: 0.5rem;
-  transition: all 0.3s ease-out;
-}
-footer #social-icons a:last-of-type {
-  margin-right: 0;
-}
-footer #social-icons a:hover {
-  cursor: pointer;
-  color: white;
-  transition: all 0.3s ease-in;
 }
 
 @keyframes pulse {

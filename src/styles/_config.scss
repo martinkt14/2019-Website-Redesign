@@ -1,8 +1,13 @@
+//Colors
+
 $primary-blue: #43536b;
 $secondary-blue: rgba(97, 129, 165, 0.5);
+
 $light-gray: #e5e5e5;
 $mid-gray: #8a8a8a;
+
 $international-orange: rgb(240, 74, 0);
+
 $blue-gradient: linear-gradient(
   270deg,
   #141e30 3.94%,
@@ -10,4 +15,7 @@ $blue-gradient: linear-gradient(
   #243b55 98.48%
 );
 
-//Utilities
+//Mobile/Table Breakpoints
+$phone-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$small-screen-breakpoint: 1024px;

@@ -6,8 +6,6 @@ let tl = gsap.timeline();
 //Set element variables
 const sideNavIcons = document.querySelectorAll("#sideNav i");
 
-console.log(sideNavIcons);
-
 sideNavIcons.forEach((icon) => {
   tl.fromTo(
     icon,

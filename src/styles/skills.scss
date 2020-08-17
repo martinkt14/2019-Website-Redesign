@@ -1,0 +1,95 @@
+@import "./config";
+@import "./text-styles";
+@import "./components";
+
+#skills {
+  background: $blue-gradient;
+  padding: 10rem 4rem 10rem 4rem;
+  @media (max-width: $phone-breakpoint) {
+    padding: 1rem 0;
+  }
+  #skill-flex-container {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    @media (max-width: $phone-breakpoint) {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    #skill-menu {
+      ul {
+        list-style: none;
+        @media (max-width: $phone-breakpoint) {
+          display: flex;
+          justify-content: space-between;
+        }
+        li {
+          @include mont-regular;
+          color: $secondary-blue;
+          margin-bottom: 2rem;
+          cursor: pointer;
+          transition: all 0.3s ease-out;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          &:hover {
+            color: $light-gray;
+            transition: all 0.3s ease-in;
+          }
+          &.active-skillset {
+            color: white;
+          }
+        }
+      }
+      p {
+        @include mont-regular;
+        font-size: 1rem;
+        color: $mid-gray;
+      }
+      h5 {
+        @include mont-bold;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        color: white;
+        @media (max-width: $phone-breakpoint) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    #skill-list {
+      .skillset {
+        &.active {
+          display: flex;
+          align-items: flex-start;
+          flex-grow: 0;
+          @media (max-width: $phone-breakpoint) {
+            width: 80%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+        }
+        &.inactive {
+          display: none;
+        }
+        .skill {
+          background: $secondary-blue;
+          padding: 1rem 1.5rem;
+          margin-right: 1.5rem;
+          border-radius: 4px;
+          @media (max-width: $phone-breakpoint) {
+            width: 40%;
+            margin-right: 0;
+          }
+          i {
+            font-size: 2rem;
+            color: $light-gray;
+          }
+        }
+      }
+    }
+  }
+}
