@@ -361,9 +361,13 @@ body {
       }
     }
   }
+
   #projects {
     margin: 10rem 0;
     text-align: center;
+    @media (max-width: $phone-breakpoint) {
+      margin: 4rem 0;
+    }
 
     h1 {
       @include mont-bold;
@@ -371,18 +375,25 @@ body {
       opacity: 0.8;
       color: $primary-blue;
       margin-bottom: 6rem;
+      @media (max-width: $phone-breakpoint) {
+        font-size: 3rem;
+      }
     }
 
     #projects-container {
       margin: 0 auto;
       @media (max-width: $phone-breakpoint) {
         flex-direction: column;
+        width: 80%;
       }
       .project {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 4rem;
+        @media (max-width: $phone-breakpoint) {
+          flex-direction: column;
+        }
         &:last-of-type {
           margin-bottom: 0;
         }
@@ -390,6 +401,10 @@ body {
           text-align: left;
           margin-right: 4rem;
           @include mont-regular;
+          @media (max-width: $phone-breakpoint) {
+            margin-right: 0;
+            text-align: center;
+          }
           .project-logo {
             height: 4rem;
           }
