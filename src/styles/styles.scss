@@ -329,6 +329,7 @@ body {
         @include mont-regular;
         color: $mid-gray;
         font-size: 1rem;
+        margin-bottom: 1.5rem;
       }
       h5 {
         @include mont-bold;
